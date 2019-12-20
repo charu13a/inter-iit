@@ -21,6 +21,34 @@
     * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
     -->
 <link href="./main.css" rel="stylesheet"></head>
+    <!--<style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      html, body {
+        height: 370px;
+        padding: 0;
+        margin: 0;
+        }
+      #map {
+       height: 360px;
+       width: 300px;
+       overflow: hidden;
+       float: left;
+       border: thin solid #333;
+       }
+      #capture {
+       height: 360px;
+       width: 480px;
+       overflow: hidden;
+       float: left;
+       background-color: #ECECFB;
+       border: thin solid #333;
+       border-left: none;
+       }
+    </style> -->
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
@@ -162,7 +190,35 @@
                                         </div>
                                     </div>
                                 </div> </div>
-                        </div>            <div class="row">
+                        </div>  
+                        <!--<div id="map"></div>
+                            <div id="capture"></div>
+                            <script>
+                              var map;
+                              var src = 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml';
+
+                              function initMap() {
+                                map = new google.maps.Map(document.getElementById('map'), {
+                                  center: new google.maps.LatLng(-19.257753, 146.823688),
+                                  zoom: 2,
+                                  mapTypeId: 'terrain'
+                                });
+
+                                var kmlLayer = new google.maps.KmlLayer(src, {
+                                  suppressInfoWindows: true,
+                                  preserveViewport: false,
+                                  map: map
+                                });
+                                kmlLayer.addListener('click', function(event) {
+                                  var content = event.featureData.infoWindowHtml;
+                                  var testimonial = document.getElementById('capture');
+                                  testimonial.innerHTML = content;
+                                });
+                              }
+                            </script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByNbCQi2LOwkIa-ObXFJ_DuIkhXEnHEw4&callback&callback=initMap"
+                            async defer></script> -->        
+                        <div class="row">
                             <div class="col-md-6 col-xl-4">
                                 <div class="card mb-3 widget-content bg-midnight-bloom">
                                     <div class="widget-content-wrapper text-white">
@@ -385,7 +441,6 @@
                             </div>
                         </div>
                     </div>    </div>
-                <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         </div>
     </div>
 <script type="text/javascript" src="./assets/scripts/main.js"></script></body>
