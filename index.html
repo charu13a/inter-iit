@@ -400,11 +400,11 @@
 <script>
 window.onload = function () {
 
-var chart = new CanvasJS.Chart("chartContainer1",
+var chart = new CanvasJS.Chart("chartContainer3",
     {
         animationEnabled: true,
         title: {
-            text: "Line Chart"
+            text: "Contracts completed vs Time"
         },
         axisX: {
             valueFormatString: "MMM",
@@ -437,11 +437,11 @@ var chart = new CanvasJS.Chart("chartContainer1",
 chart.render();
 
 
-var chart = new CanvasJS.Chart("chartContainer3",
+var chart = new CanvasJS.Chart("chartContainer1",
     {
         animationEnabled: true,
         title: {
-            text: "Line Chart"
+            text: "Issues vs Time"
         },
         axisX: {
             valueFormatString: "MMM",
@@ -454,11 +454,32 @@ var chart = new CanvasJS.Chart("chartContainer3",
         data: [
         {
           type: "line",
+          showInLegend: true, 
+        name: "Issues Received",
           dataPoints: [
               { x: new Date(2012, 00, 1), y: 450 },
               { x: new Date(2012, 01, 1), y: 414 },
               { x: new Date(2012, 02, 1), y: 520, indexLabel: "highest", markerColor: "red", markerType: "triangle" },
               { x: new Date(2012, 03, 1), y: 460 },
+              { x: new Date(2012, 04, 1), y: 450 },
+              { x: new Date(2012, 05, 1), y: 500 },
+              { x: new Date(2012, 06, 1), y: 480 },
+              { x: new Date(2012, 07, 1), y: 480 },
+              { x: new Date(2012, 08, 1), y: 410, indexLabel: "lowest", markerColor: "DarkSlateGrey", markerType: "cross" },
+              { x: new Date(2012, 09, 1), y: 500 },
+              { x: new Date(2012, 10, 1), y: 480 },
+              { x: new Date(2012, 11, 1), y: 510 }
+            ]
+        },
+        {
+          type: "line",
+          showInLegend: true, 
+        name: "Issues Resolved",
+          dataPoints: [
+              { x: new Date(2012, 00, 1), y: 350 },
+              { x: new Date(2012, 01, 1), y: 314 },
+              { x: new Date(2012, 02, 1), y: 320, indexLabel: "highest", markerColor: "red", markerType: "triangle" },
+              { x: new Date(2012, 03, 1), y: 360 },
               { x: new Date(2012, 04, 1), y: 450 },
               { x: new Date(2012, 05, 1), y: 500 },
               { x: new Date(2012, 06, 1), y: 480 },
@@ -477,7 +498,7 @@ var chart = new CanvasJS.Chart("chartContainer4",
     {
         animationEnabled: true,
         title: {
-            text: "Line Chart"
+            text: "Progress vs Time"
         },
         axisX: {
             valueFormatString: "MMM",
