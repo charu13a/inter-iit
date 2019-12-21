@@ -180,34 +180,7 @@
                                         </div>
                                     </div>
                                 </div> </div>
-                        </div>  
-                        <!--<div id="map"></div>
-                            <div id="capture"></div>
-                            <script>
-                              var map;
-                              var src = 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml';
-
-                              function initMap() {
-                                map = new google.maps.Map(document.getElementById('map'), {
-                                  center: new google.maps.LatLng(-19.257753, 146.823688),
-                                  zoom: 2,
-                                  mapTypeId: 'terrain'
-                                });
-
-                                var kmlLayer = new google.maps.KmlLayer(src, {
-                                  suppressInfoWindows: true,
-                                  preserveViewport: false,
-                                  map: map
-                                });
-                                kmlLayer.addListener('click', function(event) {
-                                  var content = event.featureData.infoWindowHtml;
-                                  var testimonial = document.getElementById('capture');
-                                  testimonial.innerHTML = content;
-                                });
-                              }
-                            </script>
-                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByNbCQi2LOwkIa-ObXFJ_DuIkhXEnHEw4&callback&callback=initMap"
-                            async defer></script> -->        
+                        </div>       
                         <div class="row">
                             <div class="col-md-6 col-xl-3">
                                 <div class="card mb-3 widget-content bg-midnight-bloom">
@@ -419,18 +392,18 @@ var chart = new CanvasJS.Chart("chartContainer3",
         {
           type: "line",
           dataPoints: [
-              { x: new Date(2012, 00, 1), y: 450 },
-              { x: new Date(2012, 01, 1), y: 414 },
-              { x: new Date(2012, 02, 1), y: 520, indexLabel: "highest", markerColor: "red", markerType: "triangle" },
-              { x: new Date(2012, 03, 1), y: 460 },
-              { x: new Date(2012, 04, 1), y: 450 },
-              { x: new Date(2012, 05, 1), y: 500 },
-              { x: new Date(2012, 06, 1), y: 480 },
-              { x: new Date(2012, 07, 1), y: 480 },
-              { x: new Date(2012, 08, 1), y: 410, indexLabel: "lowest", markerColor: "DarkSlateGrey", markerType: "cross" },
-              { x: new Date(2012, 09, 1), y: 500 },
-              { x: new Date(2012, 10, 1), y: 480 },
-              { x: new Date(2012, 11, 1), y: 510 }
+              { x: new Date(2012, 00, 1), y: 0, indexLabel: "lowest", markerColor: "DarkSlateGrey", markerType: "cross"  },
+              { x: new Date(2012, 01, 1), y: 1 },
+              { x: new Date(2012, 02, 1), y: 1},
+              { x: new Date(2012, 03, 1), y: 3 },
+              { x: new Date(2012, 04, 1), y: 4 },
+              { x: new Date(2012, 05, 1), y: 2 },
+              { x: new Date(2012, 06, 1), y: 6 },
+              { x: new Date(2012, 07, 1), y: 3 },
+              { x: new Date(2012, 08, 1), y: 8, indexLabel: "highest", markerColor: "red", markerType: "triangle"},
+              { x: new Date(2012, 09, 1), y: 7 },
+              { x: new Date(2012, 10, 1), y: 1 },
+              { x: new Date(2012, 11, 1), y: 2 }
             ]
         }
         ]
@@ -459,17 +432,17 @@ var chart = new CanvasJS.Chart("chartContainer1",
         name: "Issues Received",
           dataPoints: [
               { x: new Date(2012, 00, 1), y: 450 },
-              { x: new Date(2012, 01, 1), y: 414 },
+              { x: new Date(2012, 01, 1), y: 433 },
               { x: new Date(2012, 02, 1), y: 520, indexLabel: "highest", markerColor: "red", markerType: "triangle" },
               { x: new Date(2012, 03, 1), y: 460 },
               { x: new Date(2012, 04, 1), y: 450 },
               { x: new Date(2012, 05, 1), y: 500 },
               { x: new Date(2012, 06, 1), y: 480 },
               { x: new Date(2012, 07, 1), y: 480 },
-              { x: new Date(2012, 08, 1), y: 410, indexLabel: "lowest", markerColor: "DarkSlateGrey", markerType: "cross" },
+              { x: new Date(2012, 08, 1), y: 432 },
               { x: new Date(2012, 09, 1), y: 500 },
               { x: new Date(2012, 10, 1), y: 480 },
-              { x: new Date(2012, 11, 1), y: 510 }
+              { x: new Date(2012, 11, 1), y: 350 , indexLabel: "lowest", markerColor: "DarkSlateGrey", markerType: "cross"}
             ]
         },
         {
@@ -479,16 +452,16 @@ var chart = new CanvasJS.Chart("chartContainer1",
           dataPoints: [
               { x: new Date(2012, 00, 1), y: 350 },
               { x: new Date(2012, 01, 1), y: 314 },
-              { x: new Date(2012, 02, 1), y: 320, indexLabel: "highest", markerColor: "red", markerType: "triangle" },
+              { x: new Date(2012, 02, 1), y: 320},
               { x: new Date(2012, 03, 1), y: 360 },
-              { x: new Date(2012, 04, 1), y: 450 },
-              { x: new Date(2012, 05, 1), y: 500 },
-              { x: new Date(2012, 06, 1), y: 480 },
-              { x: new Date(2012, 07, 1), y: 480 },
-              { x: new Date(2012, 08, 1), y: 410, indexLabel: "lowest", markerColor: "DarkSlateGrey", markerType: "cross" },
-              { x: new Date(2012, 09, 1), y: 500 },
-              { x: new Date(2012, 10, 1), y: 480 },
-              { x: new Date(2012, 11, 1), y: 510 }
+              { x: new Date(2012, 04, 1), y: 250, indexLabel: "lowest", markerColor: "DarkSlateGrey", markerType: "cross" },
+              { x: new Date(2012, 05, 1), y: 300 },
+              { x: new Date(2012, 06, 1), y: 350 },
+              { x: new Date(2012, 07, 1), y: 400 },
+              { x: new Date(2012, 08, 1), y: 420 , indexLabel: "highest", markerColor: "red", markerType: "triangle"},
+              { x: new Date(2012, 09, 1), y: 410 },
+              { x: new Date(2012, 10, 1), y: 380 },
+              { x: new Date(2012, 11, 1), y: 310 }
             ]
         }
         ]
@@ -513,18 +486,18 @@ var chart = new CanvasJS.Chart("chartContainer4",
         {
           type: "line",
           dataPoints: [
-              { x: new Date(2012, 00, 1), y: 450 },
-              { x: new Date(2012, 01, 1), y: 414 },
-              { x: new Date(2012, 02, 1), y: 520, indexLabel: "highest", markerColor: "red", markerType: "triangle" },
-              { x: new Date(2012, 03, 1), y: 460 },
-              { x: new Date(2012, 04, 1), y: 450 },
-              { x: new Date(2012, 05, 1), y: 500 },
-              { x: new Date(2012, 06, 1), y: 480 },
-              { x: new Date(2012, 07, 1), y: 480 },
-              { x: new Date(2012, 08, 1), y: 410, indexLabel: "lowest", markerColor: "DarkSlateGrey", markerType: "cross" },
-              { x: new Date(2012, 09, 1), y: 500 },
-              { x: new Date(2012, 10, 1), y: 480 },
-              { x: new Date(2012, 11, 1), y: 510 }
+              { x: new Date(2012, 00, 1), y: 5, indexLabel: "lowest", markerColor: "DarkSlateGrey", markerType: "cross"  },
+              { x: new Date(2012, 01, 1), y: 11 },
+              { x: new Date(2012, 02, 1), y: 22},
+              { x: new Date(2012, 03, 1), y: 20 },
+              { x: new Date(2012, 04, 1), y: 23 },
+              { x: new Date(2012, 05, 1), y: 36 },
+              { x: new Date(2012, 06, 1), y: 38 },
+              { x: new Date(2012, 07, 1), y: 35 },
+              { x: new Date(2012, 08, 1), y: 41},
+              { x: new Date(2012, 09, 1), y: 42 },
+              { x: new Date(2012, 10, 1), y: 43 , indexLabel: "highest", markerColor: "red", markerType: "triangle"  },
+              { x: new Date(2012, 11, 1), y: 40 }
             ]
         }
         ]
