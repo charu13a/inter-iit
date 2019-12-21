@@ -21,34 +21,6 @@
     * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
     -->
 <link href="./main.css" rel="stylesheet"></head>
-    <!--<style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      html, body {
-        height: 370px;
-        padding: 0;
-        margin: 0;
-        }
-      #map {
-       height: 360px;
-       width: 300px;
-       overflow: hidden;
-       float: left;
-       border: thin solid #333;
-       }
-      #capture {
-       height: 360px;
-       width: 480px;
-       overflow: hidden;
-       float: left;
-       background-color: #ECECFB;
-       border: thin solid #333;
-       border-left: none;
-       }
-    </style> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->  
     <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -63,8 +35,6 @@
 <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
 <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="css/util.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 <body>
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
@@ -187,8 +157,7 @@
                             <div class="page-title-wrapper">
                                 <div class="page-title-heading">
                                     <div class="page-title-icon">
-                                        <i class="pe-7s-car icon-gradient bg-mean-fruit">
-                                        </i>
+                                        <img class="icon-gradient bg-mean-fruit" src="https://image.flaticon.com/icons/png/512/55/55166.png" height="30px" width="30px"></img>
                                     </div>
                                     <div>Adminstrator Dashboard
                                         <div class="page-title-subheading">
@@ -196,115 +165,70 @@
                                         </div>
                                     </div>
                                 </div> </div>
-                        </div>  
-                        <!--<div id="map"></div>
-                            <div id="capture"></div>
-                            <script>
-                              var map;
-                              var src = 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml';
-                              function initMap() {
-                                map = new google.maps.Map(document.getElementById('map'), {
-                                  center: new google.maps.LatLng(-19.257753, 146.823688),
-                                  zoom: 2,
-                                  mapTypeId: 'terrain'
-                                });
-                                var kmlLayer = new google.maps.KmlLayer(src, {
-                                  suppressInfoWindows: true,
-                                  preserveViewport: false,
-                                  map: map
-                                });
-                                kmlLayer.addListener('click', function(event) {
-                                  var content = event.featureData.infoWindowHtml;
-                                  var testimonial = document.getElementById('capture');
-                                  testimonial.innerHTML = content;
-                                });
-                              }
-                            </script>
-                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByNbCQi2LOwkIa-ObXFJ_DuIkhXEnHEw4&callback&callback=initMap"
-                            async defer></script> -->   
-
+                        </div>    
                             <h1>Issues</h1>     
                         <div class="limiter">
-        <div class="container-table100">
-            <div class="wrap-table100">
-                    <div class="table">
-
-                        <div class="row header">
-                            <div class="cell">
-                                Issue category
-                            </div>
-                            <div class="cell">
-                                Location
-                            </div>
-                            <div class="cell">
-                                Change Status
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="cell" data-title="Issue category">
-                                Pothole
-                            </div>
-                            <div class="cell" data-title="Location">
-                                ###
-                            </div>
-                            <div class="cell" data-title="Change Status">
+        <div class="row">
+            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">Issue Details
+                                    </div>
+            <div class="table-responsive">
+                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                        <thead>
+                        <tr>
+                            <th>Issue category</th>
+                            <th>Location</th>
+                            <th>Change Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Pothole </td>
+                            <td>###</td>
+                            <td>
                                 <select>
                                     <option value="volvo">Not Acted upon</option>
                                     <option value="saab">Action in progress</option>
                                     <option value="opel">Resolved</option>
                                 </select>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="cell" data-title="Issue category">
-                                Excessive drainage water flow
-                            </div>
-                            <div class="cell" data-title="Location">
-                                ###
-                            </div>
-                            <div class="cell" data-title="Change Status">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pothole </td>
+                            <td>###</td>
+                            <td>
                                 <select>
                                     <option value="volvo">Not Acted upon</option>
                                     <option value="saab">Action in progress</option>
                                     <option value="opel">Resolved</option>
                                 </select>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="cell" data-title="Issue category">
-                                Broken pavement
-                            </div>
-                            <div class="cell" data-title="Location">
-                                ###
-                            </div>
-                            <div class="cell" data-title="Change Status">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pothole </td>
+                            <td>###</td>
+                            <td>
                                 <select>
                                     <option value="volvo">Not Acted upon</option>
                                     <option value="saab">Action in progress</option>
                                     <option value="opel">Resolved</option>
                                 </select>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="cell" data-title="Issue category">
-                                Cracks in the road
-                            </div>
-                            <div class="cell" data-title="Location">
-                                ###
-                            </div>
-                            <div class="cell" data-title="Change Status">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pothole </td>
+                            <td>###</td>
+                            <td>
                                 <select>
                                     <option value="volvo">Not Acted upon</option>
                                     <option value="saab">Action in progress</option>
                                     <option value="opel">Resolved</option>
                                 </select>
-                            </div>
-                        </div>
-
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                     </div>
             </div>
         </div>
