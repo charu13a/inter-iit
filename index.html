@@ -154,7 +154,6 @@
                     <div class="scrollbar-sidebar">
                         <div class="app-sidebar__inner">
                             <ul class="vertical-nav-menu">
-                                <li class="app-sidebar__heading">Dashboards</li>
                                 <li>
                                     <a href="index.html" class="mm-active">
                                         <i class="metismenu-icon pe-7s-rocket"></i>
@@ -278,13 +277,19 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div>
+                                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in number" style="width: 6%; margin: 5px">
+                                    <input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Search for contractor name..." title="Type in number" style="width: 25%; margin: 10px">
+                                    <input type="text" id="myInput2" onkeyup="myFunction2()" placeholder="Search for road..." title="Type in number" style="width: 35%; margin: 10px">
+                                    <input type="text" id="myInput3" onkeyup="myFunction3()" placeholder="Search for status..." title="Type in number" style="width: 25%; margin: 10px">
+                                    </div>
                                     <div class="table-responsive">
-                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                        <table id="myTable" class="align-middle mb-0 table table-borderless table-striped table-hover">
                                             <thead>
                                             <tr>
                                                 <th class="text-center">#</th>
                                                 <th >Contractor</th>
-                                                <th>Location</th>
+                                                <th>Road Name</th>
                                                 <th class="text-center">Status</th>
                                                 <th class="text-center">Issues</th>
                                             </tr>
@@ -531,5 +536,83 @@ chart.render();
 
 }
 </script>
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+function myFunction1() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput1");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+function myFunction2() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput2");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[2];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+function myFunction3() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput3");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[3];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
 </body>
 </html>
