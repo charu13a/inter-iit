@@ -258,7 +258,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- The Modal -->
 <div class="modal" id="myModal">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-xl">
     <div class="modal-content">
 
       <!-- Modal Header -->
@@ -279,6 +279,7 @@
                             <th>Thickness</th>
                             <th>Material</th>
                             <th>Comment</th>
+                            <th>Status</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -290,6 +291,13 @@
                             <td>-</td>
                             <td>-</td>
                             <td>Road does not look as long as reported.</td>
+                            <td>
+                                <select class="form-control">
+                                    <option value="volvo">Not Acted upon</option>
+                                    <option value="saab">Action in progress</option>
+                                    <option value="opel">Resolved</option>
+                                </select>
+                            </td>
                         </tr> 
                         <tr>
                             <td>#2</td>
@@ -299,6 +307,13 @@
                             <td>-</td>
                             <td>-</td>
                             <td>Reported length is wrong.</td>
+                            <td>
+                                <select class="form-control">
+                                    <option value="volvo">Not Acted upon</option>
+                                    <option value="saab">Action in progress</option>
+                                    <option value="opel">Resolved</option>
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>#3</td>
@@ -308,6 +323,13 @@
                             <td>-</td>
                             <td>-</td>
                             <td>No construction took place during the week.</td>
+                            <td>
+                                <select class="form-control">
+                                    <option value="volvo">Not Acted upon</option>
+                                    <option value="saab">Action in progress</option>
+                                    <option value="opel">Resolved</option>
+                                </select>
+                            </td>
                         </tr> 
                         </tbody>
                         </table>     
