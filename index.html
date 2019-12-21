@@ -85,10 +85,6 @@
                 <div class="app-header-left">
                     <ul class="header-menu nav">
                         <li class="dropdown nav-item">
-                            <a href="javascript:void(0);" class="nav-link">
-                                <i class="nav-link-icon fa fa-cog"></i>
-                                Settings
-                            </a>
                         </li>
                     </ul>        </div>
                 <div class="app-header-right">
@@ -102,8 +98,7 @@
                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                         </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
-                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Logout</button>
                                         </div>
                                     </div>
                                 </div>
@@ -413,7 +408,7 @@ var chart = new CanvasJS.Chart("chartContainer3",
             text: "Contracts completed vs Time"
         },
         axisX: {
-            valueFormatString: "MMM",
+            valueFormatString: "M",
             interval: 1,
             intervalType: "month"
         },
@@ -450,7 +445,7 @@ var chart = new CanvasJS.Chart("chartContainer1",
             text: "Issues vs Time"
         },
         axisX: {
-            valueFormatString: "MMM",
+            valueFormatString: "M",
             interval: 1,
             intervalType: "month"
         },
@@ -507,7 +502,7 @@ var chart = new CanvasJS.Chart("chartContainer4",
             text: "Progress vs Time"
         },
         axisX: {
-            valueFormatString: "MMM",
+            valueFormatString: "M",
             interval: 1,
             intervalType: "month"
         },
